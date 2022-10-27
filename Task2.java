@@ -1,5 +1,5 @@
 package com.company;
-import java.util.Arrays;
+import java.util.Arrays;   //импортируем модуль Arrays для сортировки массива
 
 public class Task2 {
     public static void main (String args[]){    //вводим значения параметров-массивов
@@ -9,7 +9,7 @@ public class Task2 {
 
     static void differenceMaxMin(int[] a){
         int dif = 0;
-        Arrays.sort(a);
-        System.out.println(a[a.length-1]-a[0]);
+        Arrays.sort(a);    //сортируем элементы массива по убыванию
+        System.out.println(a[a.length-1]-a[0]);     //из большего элемента вычитаем меньший
     }
 }
