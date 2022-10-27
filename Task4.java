@@ -12,9 +12,9 @@ public class Task4 {
     static void cumulativeSum(int[] a){
         int sum = a[0];
         for (int i = 1; i < a.length; i++) {
-            int sum_copy = sum;
-            sum += a[i];
-            a[i]+=sum_copy;
+            int sum_copy = sum;   //приравниваем sum др. переменной, как бы дублируя его
+            sum += a[i];  //прибавляем к sum элемент массива
+            a[i]+=sum_copy; //прибавляем к элементу массива sum 
         }
         System.out.println(Arrays.toString(a));
     }
