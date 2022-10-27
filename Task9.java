@@ -10,7 +10,7 @@ public class Task9 {
 
     static boolean isPrefix(String a, String b) {
         for (int i = 0; i < b.length()-2; i++) {
-            if (a.charAt(i) != b.charAt(i))
+            if (a.charAt(i) != b.charAt(i))   //по порядку с начала сравниваем между собой символы обоих строк, если они вдруг не совпадут, возвращаем false
                 return false;
         }
         return true;
@@ -18,7 +18,7 @@ public class Task9 {
 
     static boolean isSuffix(String a, String b) {
         for (int i = 0; i < b.length()-1; i++) {
-            if (a.charAt(a.length()-1-i) != b.charAt(b.length()-1-i))
+            if (a.charAt(a.length()-1-i) != b.charAt(b.length()-1-i))  //то же самое, но с конца
                 return false;
         }
         return true;
