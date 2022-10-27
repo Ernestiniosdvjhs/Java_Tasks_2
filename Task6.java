@@ -1,4 +1,4 @@
-package com.company;
+package com.company;   //тут мы считаем числа фиббоначи
 
 public class Task6 {
     public static void main(String[] args) {
@@ -8,12 +8,12 @@ public class Task6 {
     }
 
     static void Fibonacci(int n) {
-        int sum = 1;
+        int sum = 1;  //для начала сумму приравниваем к 1, а так же вводим еще одну переменную а, она = 0
         int a = 0;
         for (int i = 1; i <= n; i++) {
-            int b = sum;
-            sum+= a;
-            a = b;
+            int b = sum;   //дублируем переменную sum
+            sum+= a;  //складываем sum и a
+            a = b;  //приравниваем переменную b (переменная sum до сложения в пред. строке) к а
         }
         System.out.println(sum);
     }
