@@ -12,7 +12,7 @@ public class Task3 {
     static void isAvgWhole(int[] a){
         double sum = 0;
         for (int i = 0; i < a.length; i++)
-            sum+=a[i];
-        System.out.println((sum/a.length)%1==0);
+            sum+=a[i];   //суммируем элементв массива
+        System.out.println((sum/a.length)%1==0);  //делим sum на кол-во элесентов
     }
 }
