@@ -1,4 +1,4 @@
-package com.company;
+package com.company;    //тут кароч такой алгоритм, что если число чтеное, то число сегментов равно самому числу, а если нечетное, то сумме числа и 2
 
 public class Task10 {
     public static void main(String[] args) {
