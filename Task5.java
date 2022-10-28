@@ -5,7 +5,7 @@ public class Task5 {
         getDecimalPlaces("43.20");// 2
         getDecimalPlaces("400");// 0
         getDecimalPlaces("3.1");// 1
-        getDecimalPlaces("3908.123456940");// 9
+        getDecimalPlaces("3908.123456940");// 9  - эту строку не пиши, я ее сам вставил
     }
 
     static void getDecimalPlaces(String s) {
